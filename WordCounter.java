@@ -134,7 +134,7 @@ public class WordCounter {
             } catch (InvalidStopwordException e) {
                 if(i == 0){
                     Scanner scan = new Scanner(System.in);
-                    System.out.println("WARNING: You have inputted an invalid stopword. You may try one more time to input a valid stop word. Otherwise, you will be reported.");
+                    System.out.println( e + ". You may try one more time to input a valid stop word. Otherwise, you will be reported.");
                     stopword = scan.nextLine();
                 } else {
                     System.out.println(e + ". REPORTING USER");
